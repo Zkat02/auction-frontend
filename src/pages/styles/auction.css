@@ -1,0 +1,167 @@
+
+/* Auction */
+
+.auction {
+    display: flex;
+    flex-direction: column;
+  
+    width: auto;
+    height:auto;
+    /* height: 2900px; */
+    background-color: #1a1a19;
+  
+  }
+  
+  .auction__header {
+    min-height: 95vh;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      /* url(../../img/auction_vegetables.svg); */
+      url(../../img/auction_back.svg);
+      /* url(../../img/auction_back2.svg); */
+      /* url(../../img/auction_back3.svg); */
+      background-size: cover;
+    border-bottom: 8px solid #394431;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .auction__header_text {
+    width: 100%;
+    font-weight: 700;
+    font-size: 114px;
+    /* line-height: 5rem; */
+    letter-spacing: 97px;
+    text-align: center;
+    color: #ecc300;
+    /* border: 1px solid #394431; */
+    text-shadow: 15px 20px 6px rgb(0 0 0 / 50%);
+    padding: 18% 0%;
+}
+  .auction__body {
+    width: 100%;
+    /* height: 1400px; */
+    height: fit-content;
+  
+    display: flex;
+  
+    padding: 25px;
+  
+    background: linear-gradient(0deg, #ece8d7, #ece8d7),
+      linear-gradient(180deg, #beb497 9.17%, #dad1b5 20.1%);
+  }
+  
+  .auction__body_cards {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    row-gap: 5vh;
+  }
+  
+  .auction_card {
+    width: 264px;
+    height: 493px;
+  
+    background: #ece7d4;
+    border-radius: 10px 50px 30px 30px;
+  }
+  
+  .auction_card img{
+    /* width: 264px;
+  height: 294px; */
+  /* background-color: #615d4c; */
+  background: #d3c9ad;
+  width: 264px;
+  max-height: 294px;
+  border-radius: 10px 50px;
+  }
+  .value{
+    text-align: end;
+  }
+  .about_product {
+    width: 263px;
+    height: 187px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .product_name {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 40px;
+    /* identical to box height, or 167% */
+  
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  
+    color: #615d4c;
+  }
+  
+  .product_information {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  
+    width: 100%;
+    height: 100%;
+  
+    border-top: #cdc8b2;
+    border-top-style: solid;
+    border-top-width: 4px;
+  }
+  .product_parametr {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding-top: 5%;
+  
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 50px;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  .btn_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  
+    width: 120px;
+    height: 45px;
+  
+    background: #9ec93a;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 37px;
+  }
+  
+  .btm_make_bid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  
+    width: 120px;
+    height: 45px;
+  
+    background: #efcc36;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+  }
+  .buttons a{
+    color: #fff;
+    text-decoration: none;
+  }
+  

@@ -1,0 +1,129 @@
+/* footer */
+@import "../../styles/reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+
+.navbar {
+  background-color: #121111;
+  padding: 20px 0;
+  display: flex;
+}
+
+.container {
+  margin: auto;
+  padding: 0 15px;
+  width: 1170px;
+}
+
+.nav_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 30px;
+  row-gap: 20px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ecc300;
+  text-decoration: none;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+  font-size: 14px;
+  font-weight: medium;
+}
+.nav-list_item {
+}
+.nav-list_link {
+  color: #ecc300;
+  text-decoration: none;
+}
+
+.nav-list__link:hover {
+  opacity: 0.8;
+}
+
+.nav-list__link--active {
+  position: relative;
+}
+
+.nav-list__link--active::before {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  top: 100%;
+
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: #eae9e2;
+}
+
+/* header */
+
+.header {
+  /* position: absolute; */
+
+  height: 800px;
+  background-attachment: local, scroll;
+  background-position: bottom;
+
+  background-color: #121111;
+  color: #ecc300;
+  background-image: url("../img/header.png");
+  background-size: cover;
+}
+.header__container {
+  /* padding: 10% 0% 0% 35%; */
+}
+
+.header__row {
+  height: 490px;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  padding-right: 50px;
+}
+
+.button__row {
+  margin-right: 221px;
+  height: 121px;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+.btn {
+  width: 196px;
+  height: 58px;
+  border-radius: 29px;
+
+  background: #ecc300;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 50px;
+
+  box-shadow: -5px 7px 5px black;
+  text-align: center;
+  padding: 5px 7px;
+  color: #1a1a19;
+  /* color: #1c1c1b; */
+  text-decoration: none;
+}
+
+.first_header_column {
+  /* flex: 50%; */
+  padding: 0 1% 0 0%;
+}
+.second_header_column {
+  /* flex: 50%; */
+  /* left: 5%; */
+  color: #d0cfca;
+}

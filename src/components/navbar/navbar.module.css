@@ -1,0 +1,35 @@
+/* Navbar */
+@import '../../styles/reset.css';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+.navbar {
+  background-color: #121111; /* navbar background color */
+  padding: 20px 0; /* add some padding to the navbar */
+}
+
+.container
+{
+  margin: auto;
+  padding: 0 15px;
+  width: 1000px;
+}
+
+/* 
+.logo {
+  font-size: 24px; 
+  font-weight: bold;
+  color: #ECC300; 
+} */
+.nav_row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 30px;
+  row-gap: 20px;
+  flex-wrap: wrap;
+}
+
+a{
+  color:rgb(255, 217, 47);
+  text-decoration: none;
+}

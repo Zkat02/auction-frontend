@@ -1,0 +1,91 @@
+.login-page {
+  background: #7b7839;
+  background-image: url(./sign_in_back.svg);
+
+  background-size: cover;
+
+  height: 100vh;
+
+  display: flex;
+  flex-direction: row;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #e5e383;
+}
+.login-page_about{
+    color: #eeebb0;
+    width: 50%;
+    margin: 3% 10% 0 3%;
+    font-size: 18px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: end; */
+}
+.login-page_title {
+color: #243615;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  /* text-align: end; */
+  margin: 0 5%;
+}
+.login-page_about_text{
+    color: #243615;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    margin: 0 5%;
+    /* stext-align: end; */
+}
+.login-page_about_text a{
+    color: #243615;
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: none;
+}
+.login_form {
+  background: rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 2%;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+}
+.login_form a {
+  color: #ecc300;
+  font-weight: 700;
+  font-size: 18px;
+  text-decoration: none;
+}
+.login_form_title {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 45px;
+}
+
+.login-page input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+.login_form button {
+  /* background-color: #4caf50; */
+  color: #292816;
+  padding: 5%;
+  /* margin: 8px 0; */
+  /* border: none; */
+  /* border-radius: 4px; */
+  cursor: pointer;
+  font-size: 16px;
+  align-self: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+.login_form button:hover {
+  background-color: #f3fd4f;
+}
