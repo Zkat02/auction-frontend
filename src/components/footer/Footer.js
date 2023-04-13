@@ -2,12 +2,12 @@ import icon from "../../img//logo.png";
 import icon_location from "../../img/icons/networks/Shape.svg";
 import icon_phone from "../../img/icons/networks/Path.svg";
 import icon_facebook from "../../img/icons/networks/Facebook.svg";
-import icon_pinterest from "../../img/icons/networks/Pinterest.svg";
+// import icon_pinterest from "../../img/icons/networks/Pinterest.svg";
 import icon_twitter from "../../img/icons/networks/Twitter.svg";
 import icon_linkedin from "../../img/icons/networks/LinkedIn.svg";
 import icon_instagram from "../../img/icons/networks/Instagram.svg";
-import icon_google from "../../img/icons/networks/GooglePlus.svg";
-// import "./footer.module.css";
+// import icon_google from "../../img/icons/networks/GooglePlus.svg";
+import "./footer.css";
 
 const Footer = () => {
   return (  
@@ -30,12 +30,12 @@ const Footer = () => {
             </div>
             <div className="footer__contacts_other">
               <div className="footer__contacts_other_text">Social Media</div>
-              <a href="http://facebook.com" target="_blank" rel="noopener"><img src={icon_facebook} alt="facebook" /></a>
-              <a href="http://linkedin.com" target="_blank" rel="noopener"><img src={icon_linkedin} alt="linkedin" /></a>
-              <a href="#" target="_blank" rel="noopener"><img src={icon_google} alt="google" /></a>
-              <a href="http://instagram.com" target="_blank" rel="noopener"><img src={icon_instagram} alt="instagram" /></a>
-              <a href="#" target="_blank" rel="noopener"><img src={icon_pinterest} alt="pinterest" /></a>
-              <a href="http://twitter.com" target="_blank" rel="noopener"><img src={icon_twitter} alt="twitter" /></a>
+              <a href="http://facebook.com" target="_blank" rel="noreferrer" ><img src={icon_facebook} alt="facebook" /></a>
+              <a href="http://linkedin.com" target="_blank" rel="noreferrer"><img src={icon_linkedin} alt="linkedin" /></a>
+              {/* <a href="#" target="_blank" rel="noreferrer"><img src={icon_google} alt="google" /></a> */}
+              <a href="http://instagram.com" target="_blank" rel="noreferrer"><img src={icon_instagram} alt="instagram" /></a>
+              {/* <a href="#" target="_blank" rel="noreferrer"><img src={icon_pinterest} alt="pinterest" /></a> */}
+              <a href="http://twitter.com" target="_blank" rel="noreferrer"><img src={icon_twitter} alt="twitter" /></a>
             </div>
           </div>
         </div>
@@ -44,23 +44,23 @@ const Footer = () => {
           <ul className="footer__pages_list">
             <li className="footer__page">
               {" "}
-              <a href="#">Home</a>
+              <a href="/" target="_blank" rel="noreferrer">Home</a>
             </li>
             <li className="footer__page">
               {" "}
-              <a href="#">About us</a>
+              <a href="/" target="_blank" rel="noreferrer">About us</a>
             </li>
             <li className="footer__page">
               {" "}
-              <a href="#">Auction</a>
+              <a href="/auctions" target="_blank" rel="noreferrer">Auction</a>
             </li>
             <li className="footer__page">
               {" "}
-              <a href="#">Contact us</a>
+              <a href="#" target="_blank" rel="noreferrer">Contact us</a>
             </li>
             <li className="footer__page">
               {" "}
-              <a href="#">Help</a>
+              <a href="#" target="_blank" rel="noreferrer">Help</a>
             </li>
           </ul>
         </div>

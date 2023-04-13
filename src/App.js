@@ -1,16 +1,19 @@
-import Navbar from "./components/navbar/Navbar.js";
-import Footer from "./components/footer/Footer.js";
+// npm i react-router-dom
+// npm start
 
-import Home from "./pages/home.js";
-import Auction from "./pages/auction.js";
-import Product from "./pages/product.js";
+
+// import Navbar from "./components/navbar/Navbar.js";
+// import Footer from "./components/footer/Footer.js";
+
+import Home from "./pages/home/home.js";
+import Auction from "./pages/auction/auction.js";
+import Product from "./pages/product/product.js";
 import ScrollToTop from "./utils/ScrollToTop.js";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Filter from "./pages/filter.js";
-import LoginPage from "./pages/login/login.js";
-import RegistrationPage from "./pages/register/registration.js";
-import { Login, Register } from "./pages/authentication.jsx";
+import { Login, Register } from "./pages/auth/authentication.jsx";
 import { CreateAuction } from "./pages/create_auction/create_auction.jsx";
+import ContactUs from "./pages/contact_us/contact_us.js";
+import Account from "./pages/account/account.js";
 
 
 
@@ -20,16 +23,15 @@ function App() {
     <div className="App">
       <Router>
         <ScrollToTop />
-        
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/auction" element={<Auction />} />
-          <Route path="/login" element={<LoginPage />} />
-          <Route path="/registration" element={<RegistrationPage />} />
           <Route path="/product/:product_id" element={<Product />} />
           <Route path="/auth/login" element={<Login />} />
           <Route path="/auth/register" element={<Register />} />
           <Route path="/create_auction" element={<CreateAuction />} />
+          <Route path="/contact_us" element={<ContactUs />} />
+          <Route path="/account" element={<Account />} />
         </Routes>
        
       </Router>
@@ -38,6 +40,3 @@ function App() {
 }
 
 export default App;
-
-// npm i react-router-dom
-// npm start

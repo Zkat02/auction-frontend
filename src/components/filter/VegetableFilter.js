@@ -117,7 +117,7 @@ const VegetableFilter = ({ vegetables }) => {
 
   const resetFilters = () => {
     setFilters({
-      type: "",
+    type: "",
     seasonality: "",
     country: "",
     minimumBidPrice: "",
@@ -205,9 +205,8 @@ const VegetableFilter = ({ vegetables }) => {
 
           <li className="list_filter">
             <label>Текущая ставка:</label>
-
+            <label>минимальная ставка:</label>
             <div>
-              минимальная ставка:
               <input
                 type="number"
                 id="currentBidPriceMin"
@@ -217,8 +216,9 @@ const VegetableFilter = ({ vegetables }) => {
                 placeholder="min"
               />
             </div>
+            <label>максимальная ставка:</label>
             <div>
-              максимальная ставка:
+            
               <input
                 type="number"
                 id="currentBidPriceMax"

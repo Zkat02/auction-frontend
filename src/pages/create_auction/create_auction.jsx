@@ -1,4 +1,4 @@
-import VegetableForm from "../../components/vegetable_form";
+import VegetableForm from "../../components/vegetable_form/vegetable_form.js";
 
 const CreateAuction = () => {
     return (
